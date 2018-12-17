@@ -58,7 +58,8 @@
             </nav>
         </div>
 	</header><!-- #masthead -->
-    <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
+  <!--
+    <?php /**if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
         <div id="page-sub-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
             <div class="container">
                 <h1>
@@ -83,4 +84,4 @@
             </div>
         </div>
     <?php endif; ?>
-                <?php endif; ?>
+  <?php endif; ?>-->
