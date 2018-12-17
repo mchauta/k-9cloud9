@@ -7,3 +7,16 @@ function mchauta_show_template() {
     $template_name= basename($template);
     if ( class_exists( 'PC' ) ) { PC::debug($template_name, 'The template being used:');}
 }
+
+//disable comments
+add_filter( 'comments_open', 'my_comments_open', 10, 2 );
+
+function my_comments_open( $open, $post_id ) {
+
+	$post = get_post( $post_id );
+
+	if ( 'page' == $post->post_type )
+		$open = false;
+
+	return $open;
+}
