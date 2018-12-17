@@ -9,7 +9,7 @@
 
 
  <?php while ( have_posts() ) : the_post(); ?>
- 	<?php if (get_field('has_top_banner')): ?>
+ 	<?php if ($has_banner): ?>
  		<div id="page-sub-header" style="background-image:url(<?php echo get_the_post_thumbnail_url();?>)">
  				<div class="container">
  						<h1>
@@ -37,9 +37,11 @@
  					$enable_vc = get_post_meta(get_the_ID(), '_wpb_vc_js_status', true);
  					if(!$enable_vc ) {
  					?>
- 					<header class="entry-header">
- 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
- 				</header><!-- .entry-header -->
+					<?php if (!$has_banner): ?>
+	 					<header class="entry-header">
+	 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	 					</header><!-- .entry-header -->
+					<?php endif; ?>
  					<?php } ?>
 
  				<div class="entry-content">
