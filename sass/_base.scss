@@ -286,8 +286,7 @@ table {
 --------------------------------------------------------------*/
 header#masthead {
   margin-bottom: 0;
-  background-color: #563d7c ;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+  background-color: #fff ;
   padding: .74rem 1rem;
 }
 
@@ -364,7 +363,7 @@ a.page-scroller {
 }
 
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
-  color: #cdbfe3;
+  color: $teal;
   padding: 0.5rem;
   font-weight: 500;
   font-size: 0.875rem;

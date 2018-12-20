@@ -1,0 +1,24 @@
+.brand-pad {
+  background: white;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  box-shadow: 1px 2px 5px grey;
+  border-radius: 200px;
+  z-index: 99;
+  a {
+    color: $teal;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin-top: 42%;
+  }
+}
+
+header#masthead {
+    background-color: #fff;
+    box-shadow: none;
+    border-bottom: 3px solid $teal;
+  }
