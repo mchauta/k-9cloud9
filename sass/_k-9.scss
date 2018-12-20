@@ -17,8 +17,13 @@
   }
 }
 
-header#masthead {
-    background-color: #fff;
-    box-shadow: none;
-    border-bottom: 3px solid $teal;
-  }
+.footer-address {
+  width: 300px;
+  color: #fff;
+  text-align: left;
+  margin-left: auto;
+}
+
+.site-footer {
+  background: $teal;
+}

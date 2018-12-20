@@ -310,12 +310,15 @@ header#masthead {
   text-align: center;
   font-size: 1.25rem;
   background-size: cover !important;
+  height: 400px;
+  background-position: center;
 }
 
 body:not(.theme-preset-active) #page-sub-header h1 {
   line-height: 1.6;
   font-size: 4rem;
-  color: #563e7c;
+  color: #fff;
+  text-shadow: 1px 1px grey;
   margin: 0 0 1rem;
   border: 0;
   padding: 0;
@@ -331,10 +334,11 @@ body:not(.theme-preset-active) #page-sub-header p {
 color: #212529;
 }
 a.page-scroller {
-  color: #333;
+  color: #fff;
   font-size: 2.6rem;
   display: inline-block;
   margin-top: 2rem;
+  text-shadow: 1px 1px grey;
 }
 
 @media screen and (min-width: 768px) {
