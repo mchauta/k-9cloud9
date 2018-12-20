@@ -288,6 +288,7 @@ header#masthead {
   margin-bottom: 0;
   background-color: #fff ;
   padding: .74rem 1rem;
+  border-bottom: 3px solid $teal;
 }
 
 .navbar-brand > a {
@@ -311,7 +312,7 @@ header#masthead {
   font-size: 1.25rem;
   background-size: cover !important;
   height: 400px;
-  background-position: center;
+  background-position: center !important;
 }
 
 body:not(.theme-preset-active) #page-sub-header h1 {
@@ -916,8 +917,8 @@ footer#colophon {
   font-size: 85%;
 }
 body:not(.theme-preset-active) footer#colophon {
-  color: #99979c;
-  background-color: #f7f7f7;
+  color: #fff;
+  background-color:$teal;
 }
 .navbar-dark .site-info {
   color: #fff;
