@@ -28,4 +28,13 @@
 .site-footer {
   background: $teal;
   color: $grey;
+  border-top: 7px dashed $green;
+}
+
+.top-section, .bottom-section {
+
+}
+
+.mid-section {
+  padding: $sectionPadding 0px $sectionPadding 0px; 
 }
