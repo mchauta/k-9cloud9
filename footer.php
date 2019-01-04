@@ -9,6 +9,7 @@
  * @package WP_Bootstrap_Starter
  */
 
+$themeDir = get_template_directory();
 ?>
 <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 			</div><!-- .row -->
@@ -16,7 +17,7 @@
 	</div><!-- #content -->
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
-		<div id="footer-paws"><img src="/img/paws.svg"></div>
+		<div id="footer-paws"><img src="<?php echo $themeDir; ?>/img/paws.svg"></div>
 		<div class="container pt-3 pb-3">
 			<div class="row">
             <div class="site-info col-sm-8">
