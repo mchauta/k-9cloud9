@@ -16,14 +16,14 @@
 	</div><!-- #content -->
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer <?php echo wp_bootstrap_starter_bg_class(); ?>" role="contentinfo">
-		<div class="container pt-3 pb-3" style="text-align: center;">
+		<div class="container pt-3 pb-3">
 			<div class="row">
             <div class="site-info col-sm-8">
               &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
 						</div><!-- close .site-info -->
 						<div class="footer-address col-sm-4">
-							K-9 Cloud 9
-							333 Plaza Dr.
+							K-9 Cloud 9</br>
+							333 Plaza Dr.</br>
 							Lynchburg, VA 24503</br>
 							<a href="tel:+14444444444">444-444-4444</a>
 						</div>
