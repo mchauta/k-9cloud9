@@ -376,7 +376,7 @@ body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
 
 body:not(.theme-preset-active) #masthead .navbar-nav > li > a:hover,
 body:not(.theme-preset-active) #masthead .navbar-nav > li.current_page_item > a {
-  color: #fff;
+  color:$green;
   font-weight: 600;
   /*background: #f9f9f9;*/
 }
