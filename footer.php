@@ -9,7 +9,7 @@
  * @package WP_Bootstrap_Starter
  */
 
-$themeDir = get_template_directory();
+$themeDir = get_stylesheet_directory();
 ?>
 <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 			</div><!-- .row -->
