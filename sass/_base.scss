@@ -915,6 +915,7 @@ object {
 --------------------------------------------------------------*/
 footer#colophon {
   font-size: 85%;
+  position: relative;
 }
 body:not(.theme-preset-active) footer#colophon {
   color: #fff;

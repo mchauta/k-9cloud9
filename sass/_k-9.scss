@@ -36,6 +36,11 @@ h3 {
   border-top: 7px dashed $green;
 }
 
+.site-info {
+    text-align: center;
+    padding: 20PX;
+}
+
 .bottom-section {
   padding-top: $sectionPadding;
 }
@@ -62,8 +67,18 @@ h3 {
 }
 
 .cta-container {
-  
+
 }
 .cta-button {
+    background: $green;
+    padding: 15px;
+    color: #fff;
+    border-radius: 100px;
+}
 
+#footer-paws {
+    width: 200px;
+    position: absolute;
+    right: 20%;
+    bottom: 20px;
 }
