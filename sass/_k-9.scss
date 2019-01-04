@@ -36,8 +36,12 @@ h3 {
   border-top: 7px dashed $green;
 }
 
-.top-section, .bottom-section {
+.bottom-section {
+  padding-top: $sectionPadding;
+}
 
+.top-section {
+  padding-bottom: $sectionPadding;
 }
 
 .mid-section {
@@ -49,5 +53,10 @@ h3 {
 .mid-header {
   h3, h2, h1 {
     text-align: center;
+    width: 100%;
   }
+}
+
+.blurb {
+  text-align: center;
 }
