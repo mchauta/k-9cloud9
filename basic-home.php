@@ -27,8 +27,29 @@
 
 	<div id="content" class="site-content">
 		<div class="container top-section">
-			<div class="row">
+			<div class="row mid-header">
         <h3>Why Choose Us?</h3>
+        <div class="col-sm-4 blurb">
+          <img />
+          <h4>Premium Lodging</h4>
+          <div class="copy">
+            this is the copy for the blurb
+          </div>
+        </div>
+        <div class="col-sm-4 blurb">
+          <img />
+          <h4>Premium Lodging</h4>
+          <div class="copy">
+            this is the copy for the blurb
+          </div>
+        </div>
+        <div class="col-sm-4 blurb">
+          <img />
+          <h4>Premium Lodging</h4>
+          <div class="copy">
+            this is the copy for the blurb
+          </div>
+        </div>
       </div>
     </div>
     <div class="container mid-section">

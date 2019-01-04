@@ -1,3 +1,8 @@
+h3 {
+  color: $blue;
+  font-size: 1.5rem;
+}
+
 .brand-pad {
   background: white;
   width: 200px;
@@ -36,5 +41,13 @@
 }
 
 .mid-section {
-  padding: $sectionPadding 0px $sectionPadding 0px; 
+  padding-top: $sectionPadding;
+  padding-bottom: $sectionPadding;
+
+}
+
+.mid-header {
+  h3, h2, h1 {
+    text-align: center;
+  }
 }
