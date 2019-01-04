@@ -20,6 +20,10 @@
  								echo $subHeading;
  								?>
  						</p>
+            <div class="cta-container">
+              <a href="" class="cta-button">444-444-4444</a>
+              <a href="" class="cta-button">Book Now</a>
+            </div>
  						<a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
  				</div>
  		</div>
