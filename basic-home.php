@@ -68,10 +68,10 @@
             </div>
             <div class="review">
             </div>
-          <div>
+          </div>
+        </div>
         </div>
       </div>
-    </div>
     <div class="container mid-section">
 			<div class="row">
         <h3>Section 3</h3>
