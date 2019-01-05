@@ -97,6 +97,7 @@ h3 {
 
 .pattern {
   background-image: url("/wp-content/themes/k-9-cloud-9-theme/img/pattern.svg");
+  position: relative;
 }
 
 .blurb-img {
@@ -108,4 +109,10 @@ h3 {
     width: 150px;
     padding: 20px;
   }
+}
+
+.divider-dog-left {
+    width: 125px;
+    position: absolute;
+    top: 0;
 }
