@@ -59,9 +59,17 @@
         </div>
       </div>
     </div>
-    <div class="container mid-section pattern">
-			<div class="row">
-        <h3>Section 2</h3>
+    <div class="pattern">
+      <div class="container mid-section">
+        <div class="divider-dog-left"><img src="<?php img_path('brown1.svg'); ?>"></div>
+  			<div class="row">
+          <div class="home-review">
+            <div class="stars">
+            </div>
+            <div class="review">
+            </div>
+          <div>
+        </div>
       </div>
     </div>
     <div class="container mid-section">
