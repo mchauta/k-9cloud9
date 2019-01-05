@@ -97,7 +97,11 @@ h3 {
 
 .blurb-img {
   border-radius: 100%;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
   img {
     width: 150px;
+    padding: 20px;
   }
 }

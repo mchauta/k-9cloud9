@@ -37,14 +37,14 @@
 			<div class="row mid-header">
         <h3>Why Choose Us?</h3>
         <div class="col-sm-4 blurb">
-          <div class="blurb-img blue"><img /></div>
+          <div class="blurb-img blue"><img src="<?php img_path('house.svg');?>"/></div>
           <h4><?php echo $blurb1['title'] ;?></h4>
           <div class="copy">
             <?php echo $blurb1['copy'] ;?>
           </div>
         </div>
         <div class="col-sm-4 blurb">
-          <div class="blurb-img green"><img /></div>
+          <div class="blurb-img green"><img src="<?php img_path('bone.svg');?>"/></div>
           <h4><?php echo $blurb2['title'] ;?></h4>
           <div class="copy">
             <?php echo $blurb2['copy'] ;?>
