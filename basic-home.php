@@ -59,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="container mid-section">
+    <div class="container mid-section pattern">
 			<div class="row">
         <h3>Section 2</h3>
       </div>
