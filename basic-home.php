@@ -5,6 +5,9 @@
 
  $has_banner = get_field('has_top_banner');
  $subHeading = get_field('sub_heading');
+ $blurb1 = get_field('blurb_1');
+ $blurb2 = get_field('blurb_2');
+ $blurb3 = get_field('blurb_3');
  get_header(); ?>
 
  	<?php if ($has_banner): ?>
@@ -35,23 +38,23 @@
         <h3>Why Choose Us?</h3>
         <div class="col-sm-4 blurb">
           <img />
-          <h4>Premium Lodging</h4>
+          <h4><?php echo $blurb1['title'] ;?></h4>
           <div class="copy">
-            this is the copy for the blurb
+            <?php echo $blurb1['copy'] ;?>
           </div>
         </div>
         <div class="col-sm-4 blurb">
           <img />
-          <h4>Premium Lodging</h4>
+          <h4><?php echo $blurb2['title'] ;?></h4>
           <div class="copy">
-            this is the copy for the blurb
+            <?php echo $blurb2['copy'] ;?>
           </div>
         </div>
         <div class="col-sm-4 blurb">
           <img />
-          <h4>Premium Lodging</h4>
+          <h4><?php echo $blurb3['title'] ;?></h4>
           <div class="copy">
-            this is the copy for the blurb
+            <?php echo $blurb3['copy'] ;?>
           </div>
         </div>
       </div>

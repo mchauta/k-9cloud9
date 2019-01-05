@@ -20,3 +20,18 @@ function my_comments_open( $open, $post_id ) {
 
 	return $open;
 }
+
+function create_reviews() {
+  register_post_type( 'reviews',
+    array(
+      'labels' => array(
+        'name' => __( 'Reviews' ),
+        'singular_name' => __( 'Review' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'reviews'),
+    )
+  );
+}
+add_action( 'init', 'create_reviews' );
