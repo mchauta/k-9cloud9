@@ -35,3 +35,8 @@ function create_reviews() {
   );
 }
 add_action( 'init', 'create_reviews' );
+
+function img_path($file) {
+  $path = '/wp-content/themes/k-9-cloud-9-theme/img/' . $file;
+  echo $path;
+}
