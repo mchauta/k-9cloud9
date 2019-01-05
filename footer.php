@@ -25,9 +25,11 @@
 						</div><!-- close .site-info -->
 						<div class="footer-address col-sm-4">
 							K-9 Cloud 9</br>
-							333 Plaza Dr.</br>
-							Lynchburg, VA 24503</br>
-							<a href="tel:+14444444444">444-444-4444</a>
+							The Plaza Shopping Center</br>
+							Lower Level</br>
+							2323 Memorial Avenue</br>
+							Lynchburg, VA 24501</br>
+							<a href="tel:+14444444444">444-444-4444</a> | <a href="https://www.google.com/maps?daddr=2323+Memorial+Ave,+Lynchburg,+VA+24501">Get Directions</a>
 						</div>
 					</div>
 		</div>
