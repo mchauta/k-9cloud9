@@ -932,7 +932,7 @@ body:not(.theme-preset-active) footer#colophon {
 }
 
 .copyright a, footer#colophon a {
-  color: inherit;
+  color: $green;
 }
 
 @media screen and (max-width: 767px) {

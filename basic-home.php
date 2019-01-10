@@ -8,6 +8,13 @@
  $blurb1 = get_field('blurb_1');
  $blurb2 = get_field('blurb_2');
  $blurb3 = get_field('blurb_3');
+ $args = array(
+    'post_type' => 'reviews',
+    'orderby'   => 'rand',
+    'posts_per_page' => 1,
+    );
+
+$the_query = new WP_Query( $args );
  get_header(); ?>
 
  	<?php if ($has_banner): ?>
@@ -63,12 +70,25 @@
       <div class="container mid-section">
         <div class="divider-dog-left"><img src="<?php img_path('brown1.svg'); ?>"></div>
   			<div class="row">
+          <?php if ( $the_query->have_posts() ) :
+              while ( $the_query->have_posts() ) : ?>
           <div class="home-review">
             <div class="stars">
+              <?php $stars = get_field('stars'); ?>
+              <?php for ($i=0; $i < $stars; $i++) {
+                  echo '<i class="fas fa-star"></i>';
+                }
+              ?>
+
             </div>
             <div class="review">
+              <?php the_content(); ?>
+            </div>
+            <div class="review-name">
+              <?php the_field('name'); ?>
             </div>
           </div>
+        <?php endwhile; endif; ?>
         </div>
         </div>
       </div>
