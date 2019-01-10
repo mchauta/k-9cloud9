@@ -72,7 +72,7 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
         <div class="divider-dog-left"><img src="<?php img_path('brown1.svg'); ?>"></div>
   			<div class="row">
           <?php if ( $the_query->have_posts() ) :
-              while ( $the_query->have_posts() ) : the_post(); ?>
+              while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
           <div class="home-review">
             <div class="stars">
               <?php $stars = get_field('stars'); ?>
