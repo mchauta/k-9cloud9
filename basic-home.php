@@ -98,13 +98,14 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
           <div class="col-sm-6 gallery-cta">
             <a href="/gallery/">
               <h3>Image Gallery</h3>
+              <p><?php the_field('gallery_copy'); ?> </p>
             </a>
           </div>
           <div class="col-sm-6 gallery-img">
             <a href="/gallery/">
               <img src="<?php img_path('dog-photos.png');?>"/>
             </a>
-            <p><?php the_field('gallery_copy'); ?> </p>
+
           </div>
 
       </div>
