@@ -8,13 +8,13 @@
  $blurb1 = get_field('blurb_1');
  $blurb2 = get_field('blurb_2');
  $blurb3 = get_field('blurb_3');
- $args = array(
+ /*$args = array(
     'post_type' => 'reviews',
     'orderby'   => 'rand',
     'posts_per_page' => 1,
     );
 
-$the_query = new WP_Query( $args );
+$the_query = new WP_Query( $args );*/
  get_header(); ?>
 
  	<?php if ($has_banner): ?>
