@@ -141,9 +141,12 @@ h3 {
 }
 
 .gallery-cta {
-  a h3 {
+   h3 {
     font-size: 1.6rem;
     color: $green;
 
+  }
+  p {
+    color: #212529;
   }
 }
