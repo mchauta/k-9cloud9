@@ -71,6 +71,7 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
     <div class="pattern">
       <div class="container mid-section">
         <div class="divider-dog-left"><img src="<?php img_path('brown1.svg'); ?>"></div>
+        <div class="arrow-up"></div>
   			<div class="row">
           <?php if ( $the_query->have_posts() ) :
               while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -98,7 +99,7 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
 			<div class="row">
           <div class="col-sm-6 gallery-cta">
             <a href="/gallery/">
-              <h3>Image Gallery <i class="far fa-images"></i></h3> 
+              <h3>Image Gallery <i class="far fa-images"></i></h3>
               <p><?php the_field('gallery_copy'); ?> </p>
             </a>
           </div>
