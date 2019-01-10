@@ -116,3 +116,15 @@ h3 {
     position: absolute;
     top: -60px;
 }
+
+/*Reviews*/
+.home-review {
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+    background: rgba(56, 158, 154, .7);
+    font-size: 1.6rem;
+}
+.stars {
+    color: $yellow;
+}

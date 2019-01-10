@@ -86,7 +86,7 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
               <?php the_content(); ?>
             </div>
             <div class="review-name">
-              <?php the_field('name'); ?>
+              - <?php the_field('name'); ?>
             </div>
           </div>
         <?php endwhile; endif; wp_reset_postdata();?>
