@@ -21,11 +21,9 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
  	<?php if ($has_banner): ?>
  		<div id="page-sub-header" style="background-image:url(<?php echo get_the_post_thumbnail_url();?>)">
  				<div class="container">
- 						<h1>
- 								<?php
- 								the_title();
- 								?>
- 						</h1>
+ 						<h2>
+ 								 Dog Heaven
+ 						</h2>
  						<p>
  								<?php
  								echo $subHeading;
@@ -95,12 +93,14 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
       </div>
     <div class="container mid-section">
 			<div class="row">
-        <div class="col-sm-6 gallery-cta">
-          <h3>Image Gallery</h3>
-        </div>
-        <div class="col-sm-6 gallery-img">
-          <img src="<?php img_path('dog-photos.png');?>"/>
-        </div>
+        <a href="/gallery/">
+          <div class="col-sm-6 gallery-cta">
+            <h3>Image Gallery</h3>
+          </div>
+          <div class="col-sm-6 gallery-img">
+            <img src="<?php img_path('dog-photos.png');?>"/>
+          </div>
+        </a>
       </div>
     </div>
 
