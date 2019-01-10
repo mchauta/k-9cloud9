@@ -21,14 +21,16 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
  	<?php if ($has_banner): ?>
  		<div id="page-sub-header" style="background-image:url(<?php echo get_the_post_thumbnail_url();?>)">
  				<div class="container">
- 						<h2>
+          <div class="header-title">
+ 						<h1>
  								 Dog Heaven
- 						</h2>
+ 						</h1>
  						<p>
  								<?php
  								echo $subHeading;
  								?>
  						</p>
+          </div>
             <div class="cta-container">
               <a href="" class="cta-button">444-444-4444</a>
               <a href="" class="cta-button">Book Now</a>
