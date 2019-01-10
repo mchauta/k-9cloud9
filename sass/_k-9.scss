@@ -29,7 +29,16 @@ h3 {
 }
 
 
+.header-title {
+  h1 {
+    margin-bottom: 0px;
 
+  }
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+}
 .site-footer {
   background: $teal;
   color: $grey;
