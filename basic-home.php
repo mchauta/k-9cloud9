@@ -42,6 +42,7 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
 
 	<div id="content" class="site-content">
 		<div class="container top-section">
+      <div class="divider-dog-right"><img src="<?php img_path('tan1.svg'); ?>"></div>
 			<div class="row mid-header">
         <h3>Why Choose Us?</h3>
         <div class="col-sm-4 blurb">
@@ -97,7 +98,7 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
 			<div class="row">
           <div class="col-sm-6 gallery-cta">
             <a href="/gallery/">
-              <h3>Image Gallery</h3>
+              <h3>Image Gallery</h3> <i class="far fa-images"></i>
               <p><?php the_field('gallery_copy'); ?> </p>
             </a>
           </div>

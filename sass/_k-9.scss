@@ -126,6 +126,12 @@ h3 {
     position: absolute;
     top: -60px;
 }
+.divider-dog-right {
+    width: 125px;
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
 
 /*Reviews*/
 .home-review {
@@ -142,7 +148,7 @@ h3 {
 
 .gallery-cta {
    h3 {
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     color: $green;
 
   }
