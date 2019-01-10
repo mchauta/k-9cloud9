@@ -57,6 +57,7 @@ h3 {
 
 .top-section {
   padding-bottom: $sectionPadding;
+  position: relative;
 }
 
 .mid-section {
@@ -129,8 +130,9 @@ h3 {
 .divider-dog-right {
     width: 125px;
     position: absolute;
-    top: -60px;
-    right: 0;
+    top: -100px;
+\\
+    right: 5%;
 }
 
 /*Reviews*/

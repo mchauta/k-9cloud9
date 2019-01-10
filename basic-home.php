@@ -98,7 +98,7 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
 			<div class="row">
           <div class="col-sm-6 gallery-cta">
             <a href="/gallery/">
-              <h3>Image Gallery</h3> <i class="far fa-images"></i>
+              <h3>Image Gallery <i class="far fa-images"></i></h3> 
               <p><?php the_field('gallery_copy'); ?> </p>
             </a>
           </div>
