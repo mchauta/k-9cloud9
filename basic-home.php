@@ -71,7 +71,7 @@ $the_query = new WP_Query( $args );
         <div class="divider-dog-left"><img src="<?php img_path('brown1.svg'); ?>"></div>
   			<div class="row">
           <?php if ( $the_query->have_posts() ) :
-              while ( $the_query->have_posts() ) : ?>
+              while ( $the_query->have_posts() ) : the_post(); ?>
           <div class="home-review">
             <div class="stars">
               <?php $stars = get_field('stars'); ?>
@@ -88,7 +88,7 @@ $the_query = new WP_Query( $args );
               <?php the_field('name'); ?>
             </div>
           </div>
-        <?php endwhile; endif; ?>
+        <?php endwhile; endif; wp_reset_postdata();?>
         </div>
         </div>
       </div>
