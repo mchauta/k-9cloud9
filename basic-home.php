@@ -95,14 +95,17 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
       </div>
     <div class="container mid-section">
 			<div class="row">
-        <a href="/gallery/">
           <div class="col-sm-6 gallery-cta">
-            <h3>Image Gallery</h3>
+            <a href="/gallery/">
+              <h3>Image Gallery</h3>
+            </a>
           </div>
           <div class="col-sm-6 gallery-img">
-            <img src="<?php img_path('dog-photos.png');?>"/>
+            <a href="/gallery/">
+              <img src="<?php img_path('dog-photos.png');?>"/>
+            </a>
           </div>
-        </a>
+
       </div>
     </div>
 
