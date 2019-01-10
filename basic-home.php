@@ -104,6 +104,7 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
             <a href="/gallery/">
               <img src="<?php img_path('dog-photos.png');?>"/>
             </a>
+            <p><?php the_field('gallery_copy'); ?> </p>
           </div>
 
       </div>
