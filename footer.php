@@ -22,6 +22,10 @@
 			<div class="row">
             <div class="site-info col-sm-8">
               &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
+							<div class="footer-sm">
+								<i class="fab fa-facebook-square"></i>
+								<i class="fab fa-twitter-square"></i>
+							</div>
 						</div><!-- close .site-info -->
 						<div class="footer-address col-sm-4">
 							K-9 Cloud 9</br>

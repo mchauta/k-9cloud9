@@ -97,13 +97,13 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
       </div>
     <div class="container mid-section">
 			<div class="row">
-          <div class="col-sm-6 gallery-cta">
+          <div class="col-sm-4 gallery-cta">
             <a href="/gallery/">
               <h3>Image Gallery <i class="far fa-images"></i></h3>
               <p><?php the_field('gallery_copy'); ?> </p>
             </a>
           </div>
-          <div class="col-sm-6 gallery-img">
+          <div class="col-sm-8 gallery-img">
             <a href="/gallery/">
               <img src="<?php img_path('dog-photos.png');?>"/>
             </a>
