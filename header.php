@@ -35,7 +35,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="footer-sm">
+                <div class="header-sm">
   								<i class="fab fa-facebook-square"></i>
   								<i class="fab fa-twitter-square"></i>
   							</div>
