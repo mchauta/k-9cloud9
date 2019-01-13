@@ -35,6 +35,10 @@
                     </div>
                   </a>
                 </div>
+                <div class="footer-sm">
+  								<i class="fab fa-facebook-square"></i>
+  								<i class="fab fa-twitter-square"></i>
+  							</div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
