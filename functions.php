@@ -26,7 +26,9 @@ function create_reviews() {
     array(
       'labels' => array(
         'name' => __( 'Reviews' ),
-        'singular_name' => __( 'Review' )
+        'singular_name' => __( 'Review' ),
+        'edit_item' => __( 'Review' ),
+        'new_item' => __( 'Review' )
       ),
       'public' => true,
       'has_archive' => true,
@@ -41,10 +43,13 @@ function create_services() {
     array(
       'labels' => array(
         'name' => __( 'Services' ),
-        'singular_name' => __( 'Service' )
+        'singular_name' => __( 'Service' ),
+        'edit_item' => __( 'Service' ),
+        'new_item' => __( 'Service' )
       ),
       'public' => true,
       'has_archive' => false,
+      'taxonomies'  => array( 'category' ),
     )
   );
 }
