@@ -36,6 +36,20 @@ function create_reviews() {
 }
 add_action( 'init', 'create_reviews' );
 
+function create_rates() {
+  register_post_type( 'rates',
+    array(
+      'labels' => array(
+        'name' => __( 'Rates' ),
+        'singular_name' => __( 'Rate' )
+      ),
+      'public' => true,
+      'has_archive' => false,
+    )
+  );
+}
+add_action( 'init', 'create_rates' );
+
 function img_path($file) {
   $path = '/wp-content/themes/k-9-cloud-9-theme/img/' . $file;
   echo $path;
