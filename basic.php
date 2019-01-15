@@ -25,7 +25,23 @@
  						<a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
  				</div>
  		</div>
- 	<?php endif; ?>
+ 	<?php else : ?>
+    <div id="page-sub-header" style="background-image:url(<?php img_path('pattern.svg')?>)">
+ 				<div class="container">
+ 						<h1>
+ 								<?php
+ 								the_title();
+ 								?>
+ 						</h1>
+ 						<p>
+ 								<?php
+ 								echo $subHeading;
+ 								?>
+ 						</p>
+ 						<a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
+ 				</div>
+ 		</div>
+<?php endif; ?>
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
