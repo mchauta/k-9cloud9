@@ -27,8 +27,8 @@ function create_reviews() {
       'labels' => array(
         'name' => __( 'Reviews' ),
         'singular_name' => __( 'Review' ),
-        'edit_item' => __( 'Review' ),
-        'new_item' => __( 'Review' )
+        'edit_item' => __( 'Edit Review' ),
+        'new_item' => __( 'New Review' )
       ),
       'public' => true,
       'has_archive' => true,
@@ -44,8 +44,8 @@ function create_services() {
       'labels' => array(
         'name' => __( 'Services' ),
         'singular_name' => __( 'Service' ),
-        'edit_item' => __( 'Service' ),
-        'new_item' => __( 'Service' )
+        'edit_item' => __( 'Edit Service' ),
+        'new_item' => __( 'New Service' )
       ),
       'public' => true,
       'has_archive' => false,
