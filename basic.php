@@ -12,7 +12,7 @@
 
  <?php while ( have_posts() ) : the_post(); ?>
  	<?php if ($has_banner): ?>
- 		<div id="page-sub-header" style="background-image:url(<?php if ($thumb) : echo $thumb; else :  img_path('pattern.svg') ;?>)">
+ 		<div id="page-sub-header" style="background-image:url(<?php if ($thumb) : echo $thumb; else :  img_path('pattern.svg') ; endif;?>)">
  				<div class="container">
  						<h1>
  								<?php
