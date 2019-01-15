@@ -36,19 +36,19 @@ function create_reviews() {
 }
 add_action( 'init', 'create_reviews' );
 
-function create_rates() {
-  register_post_type( 'rates',
+function create_services() {
+  register_post_type( 'services',
     array(
       'labels' => array(
-        'name' => __( 'Rates' ),
-        'singular_name' => __( 'Rate' )
+        'name' => __( 'Services' ),
+        'singular_name' => __( 'Service' )
       ),
       'public' => true,
       'has_archive' => false,
     )
   );
 }
-add_action( 'init', 'create_rates' );
+add_action( 'init', 'create_services' );
 
 function img_path($file) {
   $path = '/wp-content/themes/k-9-cloud-9-theme/img/' . $file;
