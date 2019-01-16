@@ -189,6 +189,7 @@ h3 {
     font-size: 1.4rem;
     margin-left: auto;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
 .fee-symbol {
@@ -198,4 +199,17 @@ h3 {
 
 .fee-unit {
   font-size: 1rem;
+}
+
+.service {
+  border-bottom: 1px solid $grey;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.serv-fee-desc {
+    padding: 10px;
+    text-align: center;
+    font-size: .8rem;
+    color: grey;
 }
