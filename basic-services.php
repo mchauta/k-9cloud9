@@ -12,6 +12,7 @@
 
  );
  $queryServ = new WP_Query($args);
+ if ( class_exists( 'PC' ) ) { PC::debug($queryServ, "");}
 
  get_header(); ?>
 
