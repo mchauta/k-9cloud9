@@ -66,11 +66,14 @@
           <?php if ($queryServ->have_posts()):
                   while ($queryServ->have_posts()): $queryServ->the_post();?>
                   <?php $unit = get_field('fee_unit'); ?>
+                  <?php $fee = get_field('fee'); ?>
                   <div class="service">
                     <h3><?php the_title(); ?></h3>
                     <p><?php the_content(); ?></p>
-                    <div class="serv-fee">$<?php the_field('fee'); if ($unit) : echo '<span class="serve-fee-unit">' . '/' . $unit . '</span'; endif;?></div>
+                    <?php if ($fee): ?>
+                    <div class="serv-fee"><span class="fee-symbol">$</span><?php the_field('fee'); if ($unit) : echo '<span class="serve-fee-unit">' . '/' . $unit . '</span'; endif;?></div>
                     <div class="serv-fee-desc"><?php the_field('fee_description'); ?></div>
+                  <?php endif; ?>
                   </div>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
