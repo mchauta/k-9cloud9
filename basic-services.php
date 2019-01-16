@@ -7,7 +7,7 @@
  $subHeading = get_field('sub_heading');
  $thumb = get_the_post_thumbnail_url();
  $args = array (
-   'post_type' => 'service',
+   'post_type' => 'services',
    'posts_per_page' => -1,
 
  );
