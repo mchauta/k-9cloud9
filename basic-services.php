@@ -75,7 +75,7 @@
                       </div>
                       <div class="col-sm-2">
                         <?php if ($fee){ ?>
-                          <div class="serv-fee"><span class="fee-symbol">$</span><?php the_field('fee'); if ($unit) : echo '<span class="serve-fee-unit">' . '/' . $unit . '</span'; endif;?></div>
+                          <div class="serv-fee"><span class="fee-symbol">$</span><?php the_field('fee'); if ($unit) { echo '<span class="serve-fee-unit">' . '/' . $unit . '</span'; }?></div>
                           <div class="serv-fee-desc"><?php the_field('fee_description'); ?></div>
                         <?php } ?>
                       </div>
