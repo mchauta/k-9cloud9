@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Basic
+* Template Name: Services
  */
 
  $has_banner = get_field('has_top_banner');
