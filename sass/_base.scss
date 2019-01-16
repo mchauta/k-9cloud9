@@ -315,7 +315,7 @@ header#masthead {
   background-position: center !important;
 }
 
-body:not(.theme-preset-active) #page-sub-header h1 p  {
+body:not(.theme-preset-active) #page-sub-header h1  {
   line-height: 1.6;
   font-size: 4rem;
   color: #fff;
@@ -328,8 +328,9 @@ body:not(.theme-preset-active) #page-sub-header h1 p  {
 #page-sub-header p {
   margin-bottom: 0;
   line-height: 1.4;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 300;
+  color: #fff;
 }
 body:not(.theme-preset-active) #page-sub-header p {
 color: #212529;
