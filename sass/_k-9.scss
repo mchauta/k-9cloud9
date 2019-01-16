@@ -181,7 +181,7 @@ h3 {
 
 /* Services */
 .serv-fee {
-    padding: 20px;
+    padding: 15px;
     background: $green;
     width: 150px;
     text-align: center;
@@ -189,4 +189,13 @@ h3 {
     font-size: 1.4rem;
     margin-left: auto;
     border-radius: 10px;
+}
+
+.fee-symbol {
+    font-size: 1rem;
+    vertical-align: super;
+}
+
+.fee-unit {
+  font-size: 1rem;
 }

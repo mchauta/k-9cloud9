@@ -68,12 +68,18 @@
                   <?php $unit = get_field('fee_unit'); ?>
                   <?php $fee = get_field('fee'); ?>
                   <div class="service">
-                    <h3><?php the_title(); ?></h3>
-                    <p><?php the_content(); ?></p>
-                    <?php if ($fee): ?>
-                    <div class="serv-fee"><span class="fee-symbol">$</span><?php the_field('fee'); if ($unit) : echo '<span class="serve-fee-unit">' . '/' . $unit . '</span'; endif;?></div>
-                    <div class="serv-fee-desc"><?php the_field('fee_description'); ?></div>
-                  <?php endif; ?>
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <h3><?php the_title(); ?></h3>
+                        <p><?php the_content(); ?></p>
+                      </div>
+                      <div class="col-sm-4">
+                        <?php if ($fee): ?>
+                        <div class="serv-fee"><span class="fee-symbol">$</span><?php the_field('fee'); if ($unit) : echo '<span class="serve-fee-unit">' . '/' . $unit . '</span'; endif;?></div>
+                        <div class="serv-fee-desc"><?php the_field('fee_description'); ?></div>
+                        <?php endif; ?>
+                      </div>
+                    </div>
                   </div>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
