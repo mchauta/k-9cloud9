@@ -67,19 +67,20 @@
                   while ($queryServ->have_posts()): $queryServ->the_post();?>
                   <?php $unit = get_field('fee_unit'); ?>
                   <?php $fee = get_field('fee'); ?>
-
-                    <div class="service row">
+                  <div class="service">
+                    <div class="row">
                       <div class="col-sm-10">
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_content(); ?></p>
                       </div>
                       <div class="col-sm-2">
                         <?php if ($fee){ ?>
-                          <div class="serv-fee"><span class="fee-symbol">$</span><?php the_field('fee'); if ($unit) { echo '<span class="serve-fee-unit">' . '/' . $unit . '</span'; }?></div>
+                          <div class="serv-fee"><span class="fee-symbol">$</span><?php the_field('fee'); if ($unit) { echo '<span class="serve-fee-unit">' . '/' . $unit . '</span>'; }?></div>
                           <div class="serv-fee-desc"><?php the_field('fee_description'); ?></div>
                         <?php } ?>
                       </div>
                     </div>
+                  </div>
 
             <?php endwhile; endif; wp_reset_postdata(); ?>
 
