@@ -9,6 +9,7 @@
  $args = array (
    'post_type' => 'services',
    'posts_per_page' => -1,
+   'order' => 'ASC',
 
  );
  $queryServ = new WP_Query($args);
@@ -68,7 +69,7 @@
                   <div class="service">
                     <h3><?php the_title(); ?></h3>
                     <p><?php the_content(); ?></p>
-                    <div class="serv-fee"><?php the_field('fee'); if ($unit) : echo '<div class="serve-fee-unit">' . '/' . $unit . '</div>'; endif;?></div>
+                    <div class="serv-fee">$<?php the_field('fee'); if ($unit) : echo '<span class="serve-fee-unit">' . '/' . $unit . '</span'; endif;?></div>
                     <div class="serv-fee-desc"><?php the_field('fee_description'); ?></div>
                   </div>
 
