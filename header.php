@@ -31,7 +31,7 @@
                 <div class="navbar-brand">
                   <a href="<?php echo esc_url( home_url( '/' )); ?>">
                     <div class="brand-pad">
-
+                      <img id="logo" src="https://k-9cloud9.com/wp-content/uploads/2019/01/k9logok9logo_2.png">
                     </div>
                   </a>
                 </div>
