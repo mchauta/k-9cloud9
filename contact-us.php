@@ -31,8 +31,7 @@
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
- 	<section id="primary">
- 		<main id="main" class="site-main" role="main">
+
       <div class="content-area col-sm-6">
 
  			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -78,9 +77,6 @@
  				<?php endif; ?>
  			</article><!-- #post-## -->
  		<?php endwhile; ?>
-
- 		</main><!-- #main -->
- 	</section><!-- #primary -->
 
  <?php
  get_footer();
