@@ -58,7 +58,7 @@
  				</div><!-- .entry-content -->
       </div>
       <div class="content-area col-sm-6">
-        <?php the_field('right_column'); ?>å
+        <?php the_field('right_column'); ?>
       </div>
  				<?php if ( get_edit_post_link() && !$enable_vc ) : ?>
  					<footer class="entry-footer">
