@@ -32,9 +32,7 @@
 		<div class="container">
 			<div class="row">
 
-      <div class="content-area col-sm-6">
-
- 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <div class="col-sm-6">
  				<?php
  					$enable_vc = get_post_meta(get_the_ID(), '_wpb_vc_js_status', true);
  					if(!$enable_vc ) {
@@ -45,8 +43,6 @@
 	 					</header><!-- .entry-header -->
 					<?php endif; ?>
  					<?php } ?>
-
- 				<div class="entry-content">
  					<?php
  						the_content();
 
@@ -55,9 +51,8 @@
  							'after'  => '</div>',
  						) );
  					?>
- 				</div><!-- .entry-content -->
       </div>
-      <div class="content-area col-sm-6">
+      <div class="col-sm-6">
         <?php the_field('right_column'); ?>
       </div>
  				<?php if ( get_edit_post_link() && !$enable_vc ) : ?>
@@ -75,7 +70,6 @@
  						?>
  					</footer><!-- .entry-footer -->
  				<?php endif; ?>
- 			</article><!-- #post-## -->
  		<?php endwhile; ?>
 
  <?php
