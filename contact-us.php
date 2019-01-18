@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Basic
+* Template Name: Contact Us
  */
 
  $has_banner = get_field('has_top_banner');
@@ -31,8 +31,9 @@
 	<div id="content" class="site-content">
 		<div class="container">
 			<div class="row">
- 	<section id="primary" class="content-area col-sm-12">
+ 	<section id="primary">
  		<main id="main" class="site-main" role="main">
+      <div class="content-area col-sm-6">
 
  			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  				<?php
@@ -56,7 +57,10 @@
  						) );
  					?>
  				</div><!-- .entry-content -->
-
+      </div>
+      <div class="content-area col-sm-6">
+        <?php the_field('right_column'); ?>å
+      </div>
  				<?php if ( get_edit_post_link() && !$enable_vc ) : ?>
  					<footer class="entry-footer">
  						<?php
