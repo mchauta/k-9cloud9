@@ -51,7 +51,7 @@ function create_services() {
       'public' => true,
       'has_archive' => false,
       'taxonomies'  => array( 'category' ),
-      'supports' => array('page-attributes'),
+      'supports' => array('title', 'editor','thumbnail', 'revisions', 'page-attributes'),
       'menu_icon'   => 'dashicons-tickets-alt',
     )
   );
@@ -70,7 +70,7 @@ function create_dogs() {
       'public' => true,
       'has_archive' => false,
       'taxonomies'  => array( 'category' ),
-      'supports' => array('page-attributes'),
+      'supports' => array('title', 'editor','thumbnail', 'revisions', 'page-attributes'),
       'menu_icon'   => 'dashicons-smiley',
     )
   );
