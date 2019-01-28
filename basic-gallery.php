@@ -69,13 +69,14 @@
                     <div class="dow-cont row">
                       <h2>Dog of the Week</h2>
                       <div class="col-sm-12 col-med-4 dow-left">
-                        <?php get_the_post_thumbnail(); ?>
+                        <?php echo get_the_post_thumbnail(); ?>
                       </div>
                       <div class="col-sm-12 col-med-8 dow-right">
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_content(); ?> </p>
                       </div>
                     </div>
+                  </hr>
           <?php endwhile; endif; wp_reset_postdata(); ?>
  					<?php
  						the_content();
