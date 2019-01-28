@@ -8,7 +8,8 @@
  *
  * @package WP_Bootstrap_Starter
  */
-
+$phoneFormat = get_option('phone_number');
+$phone = str_replace('-', '', $phoneFormat);
 
 ?>
 <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
@@ -23,17 +24,13 @@
             <div class="site-info col-sm-8">
               &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
 							<div class="footer-sm">
-								<a href="https://www.facebook.com/K9Cloud9/"><i class="fab fa-facebook-square"></i></a>
-								<a href="https://twitter.com/K9Cloud9"><i class="fab fa-twitter-square"></i></a>
+								<a href="<?php echo get_option('facebook_url'); ?>"><i class="fab fa-facebook-square"></i></a>
+								<a href="<?php echo get_option('twitter_url'); ?>"><i class="fab fa-twitter-square"></i></a>
 							</div>
 						</div><!-- close .site-info -->
 						<div class="footer-address col-sm-4">
-							K-9 Cloud 9</br>
-							The Plaza Shopping Center</br>
-							Lower Level</br>
-							2323 Memorial Avenue</br>
-							Lynchburg, VA 24501</br>
-							<a href="tel:+14444444444">444-444-4444</a> | <a href="https://www.google.com/maps?daddr=2323+Memorial+Ave,+Lynchburg,+VA+24501">Get Directions</a>
+							<?php echo get_option('address'); ?>
+							<a href="tel:+1<?php echo $phone; ?>"><?php echo $phoneFormat; ?></a> | <a href="https://www.google.com/maps?daddr=2323+Memorial+Ave,+Lynchburg,+VA+24501">Get Directions</a>
 						</div>
 					</div>
 		</div>

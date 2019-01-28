@@ -36,8 +36,8 @@
                   </a>
                 </div>
                 <div class="header-sm">
-                  <a href="https://www.facebook.com/K9Cloud9/"><i class="fab fa-facebook-square"></i></a>
-  								<a href="https://twitter.com/K9Cloud9"><i class="fab fa-twitter-square"></i></a>
+                  <a href="<?php echo get_option('facebook_url'); ?>"><i class="fab fa-facebook-square"></i></a>
+  								<a href="<?php echo get_option('twitter_url'); ?>"><i class="fab fa-twitter-square"></i></a>
   							</div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
