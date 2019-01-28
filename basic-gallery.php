@@ -75,7 +75,7 @@
                         </div>
                       </div>
                       <div class="col-sm-12 col-md-8 dow-right">
-                        <h3><?php the_title(); ?></h3>
+                        <h3><?php the_title(); ?></h3><span class="dow-breed"><?php the_field('breed'); ?></span>
                         <p><?php the_content(); ?> </p>
                       </div>
                     </div>
