@@ -23,7 +23,7 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
  				<div class="container">
           <div class="header-title">
  						<h1>
- 								 Dog Heaven
+ 								 <?php the_title(); ?>
  						</h1>
  						<p>
  								<?php
