@@ -30,8 +30,8 @@ function display_phone_element()
 
 function display_address_element()
 {
-	?>
-    	<textarea type="textarea" name="address" id="address" value="<?php echo get_option('address'); ?>" ></textarea>
+	  ?>
+    	<textarea type="textarea" rows='7' cols='50' name="address_field" id="address_field" value="<?php echo get_option('address_field'); ?>" ></textarea>
     <?php
 }
 
