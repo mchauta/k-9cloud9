@@ -38,6 +38,7 @@
                 <div class="header-sm">
                   <a href="<?php echo get_option('facebook_url'); ?>"><i class="fab fa-facebook-square"></i></a>
   								<a href="<?php echo get_option('twitter_url'); ?>"><i class="fab fa-twitter-square"></i></a>
+                  <a href="<?php echo get_option('directions_url'); ?>">Get Directions</a>
   							</div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
