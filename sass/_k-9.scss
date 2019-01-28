@@ -218,3 +218,15 @@ h3 {
     font-size: .8rem;
     color: grey;
 }
+
+//Dog of the Week
+.dow-image img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 300px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: 20px;
+  text-align: center; 
+  padding: 20px;
+}
