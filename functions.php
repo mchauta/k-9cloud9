@@ -35,6 +35,13 @@ function display_address_element()
     <?php
 }
 
+function display_directions_url_element()
+{
+  ?>
+      <input type="text" name="directions_url" id="directions_url"><?php echo get_option('directions_url'); ?>/>
+    <?php
+}
+
 function display_theme_panel_fields()
 {
 	add_settings_section("section", "All Settings", null, "theme-options");
@@ -44,12 +51,14 @@ function display_theme_panel_fields()
     add_settings_field("book_url", "Book Now Url", "display_book_element", "theme-options", "section");
     add_settings_field("phone_number", "Business Phone Number", "display_phone_element", "theme-options", "section");
     add_settings_field("address", "Business Address", "display_address_element", "theme-options", "section");
+    add_settings_field("directions_url", "Google Directions Url", "display_directions_url_element", "theme-options", "section");
 
     register_setting("section", "twitter_url");
     register_setting("section", "facebook_url");
     register_setting("section", "book_url");
     register_setting("section", "phone_number");
     register_setting("section", "address");
+    register_setting("section", "directions_url");
 }
 
 add_action("admin_init", "display_theme_panel_fields");

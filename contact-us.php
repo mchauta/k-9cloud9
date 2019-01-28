@@ -6,6 +6,8 @@
  $has_banner = get_field('has_top_banner');
  $subHeading = get_field('sub_heading');
  $thumb = get_the_post_thumbnail_url();
+ $phoneFormat = get_option('phone_number');
+ $phone = str_replace('-', '', $phoneFormat);
 
  get_header(); ?>
 
@@ -44,13 +46,9 @@
 					<?php endif; ?>
  					<?php } ?>
  					<?php
- 						the_content();
+          echo get_option('address'); ?></br>
+          <a href="tel:+1<?php echo $phone; ?>"><?php echo $phoneFormat; ?></a> | <a href="https://www.google.com/maps?daddr=2323+Memorial+Ave,+Lynchburg,+VA+24501">Get Directions</a>
 
- 						wp_link_pages( array(
- 							'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wp-bootstrap-starter' ),
- 							'after'  => '</div>',
- 						) );
- 					?>
       </div>
       <div class="col-sm-6">
         <?php the_field('right_column'); ?>
