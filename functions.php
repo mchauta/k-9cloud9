@@ -43,7 +43,7 @@ function display_theme_panel_fields()
     add_settings_field("facebook_url", "Facebook Profile Url", "display_facebook_element", "theme-options", "section");
     add_settings_field("book_url", "Book Now Url", "display_book_element", "theme-options", "section");
     add_settings_field("phone_number", "Business Phone Number", "display_phone_element", "theme-options", "section");
-    add_settings_field("address", "Business Address", "display_address_element", "theme-options", "section");
+    add_settings_field("address_field", "Business Address", "display_address_element", "theme-options", "section");
 
     register_setting("section", "twitter_url");
     register_setting("section", "facebook_url");
