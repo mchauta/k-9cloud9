@@ -14,6 +14,7 @@
  	<?php if ($has_banner): ?>
  		<div id="page-sub-header" style="background-image:url(<?php if ($thumb) : echo $thumb; else :  img_path('pattern.svg') ; endif;?>)">
  				<div class="container">
+          <div class="header-title">
  						<h1>
  								<?php
  								the_title();
@@ -24,6 +25,11 @@
  								echo $subHeading;
  								?>
  						</p>
+          </div>
+            <div class="cta-container">
+              <?php if (get_field('has_phone')): ?><a href="" class="cta-button">444-444-4444</a><?php endif; ?>
+              <?php if (get_field('has_book')): ?><a href="" class="cta-button">Book Now</a><?php endif; ?>
+            </div>
  						<a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
  				</div>
  		</div>
