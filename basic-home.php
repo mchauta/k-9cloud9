@@ -16,6 +16,10 @@
 
 $the_query = new WP_Query( $args );
 if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
+
+$phoneFormat = get_option('phone_number');
+$phone = str_replace('-', '', $phoneFormat);
+
  get_header(); ?>
 
  	<?php if ($has_banner): ?>
@@ -32,8 +36,8 @@ if ( class_exists( 'PC' ) ) { PC::debug($the_query, "query");}
  						</p>
           </div>
             <div class="cta-container">
-              <a href="" class="cta-button">444-444-4444</a>
-              <a href="" class="cta-button">Book Now</a>
+              <a href="<?php echo $phone; ?>" class="cta-button"><?php echo $phoneFormat; ?></a>
+              <a href="<?php echo get_option('book_url'); ?>" class="cta-button">Book Now</a>
             </div>
  						<a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
  				</div>

@@ -7,6 +7,9 @@
  $subHeading = get_field('sub_heading');
  $thumb = get_the_post_thumbnail_url();
 
+ $phoneFormat = get_option('phone_number');
+ $phone = str_replace('-', '', $phoneFormat);
+
  get_header(); ?>
 
 
@@ -27,8 +30,8 @@
  						</p>
           </div>
             <div class="cta-container">
-              <?php if (get_field('has_phone')): ?><a href="" class="cta-button">444-444-4444</a><?php endif; ?>
-              <?php if (get_field('has_book')): ?><a href="" class="cta-button">Book Now</a><?php endif; ?>
+              <?php if (get_field('has_phone')): ?><a href="<?php echo $phone; ?>" class="cta-button"><?php echo $phoneFormat; ?></a><?php endif; ?>
+              <?php if (get_field('has_book')): ?><a href="<?php echo get_option('book_url'); ?>" class="cta-button">Book Now</a><?php endif; ?>
             </div>
  						<a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
  				</div>
