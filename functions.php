@@ -31,7 +31,7 @@ function display_phone_element()
 function display_address_element()
 {
 	  ?>
-    	<input type="textarea" rows='7' cols='50' name="address_field" id="address_field" value="<?php echo get_option('address_field'); ?>" />
+    	<input type="text" rows='7' cols='50' name="address_field" id="address_field" value="<?php echo get_option('address_field'); ?>" />
     <?php
 }
 
