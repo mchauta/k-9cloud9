@@ -67,7 +67,7 @@
           <?php if ($queryDogs->have_posts()):
                   while ($queryDogs->have_posts()): $queryDogs->the_post();?>
                   <h2>Dog of the Week</h2>
-                    <div class="dow-cont row">
+                    <div class="dow-cont row top-section" style="border-bottom: 1px solid #efefef;">
 
                       <div class="col-sm-12 col-md-4 dow-left">
                         <div class="dow-img" style="width: 100%;">
