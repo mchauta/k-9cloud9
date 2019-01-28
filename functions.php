@@ -33,6 +33,7 @@ function create_reviews() {
       'public' => true,
       'has_archive' => true,
       'rewrite' => array('slug' => 'reviews'),
+      'menu_icon'   => 'dashicons-star-empty',
     )
   );
 }
@@ -50,10 +51,31 @@ function create_services() {
       'public' => true,
       'has_archive' => false,
       'taxonomies'  => array( 'category' ),
+      'supports' => array('page-attributes'),
+      'menu_icon'   => 'dashicons-tickets-alt',
     )
   );
 }
 add_action( 'init', 'create_services' );
+
+function create_dogs() {
+  register_post_type( 'dogs',
+    array(
+      'labels' => array(
+        'name' => __( 'Dogs' ),
+        'singular_name' => __( 'Dog' ),
+        'edit_item' => __( 'Edit Dog' ),
+        'new_item' => __( 'New Dog' )
+      ),
+      'public' => true,
+      'has_archive' => false,
+      'taxonomies'  => array( 'category' ),
+      'supports' => array('page-attributes'),
+      'menu_icon'   => 'dashicons-smiley',
+    )
+  );
+}
+add_action( 'init', 'create_dogs' );
 
 function img_path($file) {
   $path = '/wp-content/themes/k-9-cloud-9-theme/img/' . $file;
