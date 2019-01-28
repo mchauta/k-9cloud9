@@ -69,7 +69,7 @@
                     <div class="dow-cont row">
                       <h2>Dog of the Week</h2>
                       <div class="col-sm-12 col-md-4 dow-left">
-                        <?php echo get_the_post_thumbnail('large'); ?>
+                        <?php echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
                       </div>
                       <div class="col-sm-12 col-md-8 dow-right">
                         <h3><?php the_title(); ?></h3>
