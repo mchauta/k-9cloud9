@@ -30,7 +30,7 @@ $phone = str_replace('-', '', $phoneFormat);
 						</div><!-- close .site-info -->
 						<div class="footer-address col-sm-4">
 							<?php echo get_option('address'); ?></br>
-							<a href="tel:+1<?php echo $phone; ?>"><?php echo $phoneFormat; ?></a> | <a href="https://www.google.com/maps?daddr=2323+Memorial+Ave,+Lynchburg,+VA+24501">Get Directions</a>
+							<a href="tel:+1<?php echo $phone; ?>"><?php echo $phoneFormat; ?></a> | <a href="<?php echo get_option('directions_url'); ?>">Get Directions</a>
 						</div>
 					</div>
 		</div>

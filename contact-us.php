@@ -47,7 +47,7 @@
  					<?php } ?>
  					<?php
           echo get_option('address'); ?></br>
-          <a href="tel:+1<?php echo $phone; ?>"><?php echo $phoneFormat; ?></a> | <a href="https://www.google.com/maps?daddr=2323+Memorial+Ave,+Lynchburg,+VA+24501">Get Directions</a>
+          <a href="tel:+1<?php echo $phone; ?>"><?php echo $phoneFormat; ?></a> | <a href="<?php echo get_option('directions_url'); ?>">Get Directions</a>
 
       </div>
       <div class="col-sm-6">
