@@ -9,6 +9,7 @@
  $args = array (
    'post_type' => 'services',
    'posts_per_page' => -1,
+   'orderby'=>'menu_order',
    'order' => 'ASC',
 
  );
