@@ -64,8 +64,8 @@
  					<?php } ?>
 
  				<div class="entry-content">
-          <?php if ($queryServ->have_posts()):
-                  while ($queryServ->have_posts()): $queryServ->the_post();?>
+          <?php if ($queryDogs->have_posts()):
+                  while ($queryDogs->have_posts()): $queryDogs->the_post();?>
                     <div class="dow-cont row">
                       <h2>Dog of the Week</h2>
                       <div class="col-sm-12 col-med-4 dow-left">
