@@ -30,7 +30,7 @@
  						</p>
           </div>
             <div class="cta-container">
-              <?php if (get_field('has_phone')): ?><a href="<?php echo $phone; ?>" class="cta-button"><?php echo $phoneFormat; ?></a><?php endif; ?>
+              <?php if (get_field('has_phone')): ?><a href="tel:+1<?php echo $phone; ?>" class="cta-button"><?php echo $phoneFormat; ?></a><?php endif; ?>
               <?php if (get_field('has_book')): ?><a href="<?php echo get_option('book_url'); ?>" class="cta-button">Book Now</a><?php endif; ?>
             </div>
  						<a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>

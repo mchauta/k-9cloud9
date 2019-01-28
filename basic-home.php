@@ -36,7 +36,7 @@ $phone = str_replace('-', '', $phoneFormat);
  						</p>
           </div>
             <div class="cta-container">
-              <a href="<?php echo $phone; ?>" class="cta-button"><?php echo $phoneFormat; ?></a>
+              <a href="tel:+1<?php echo $phone; ?>" class="cta-button"><?php echo $phoneFormat; ?></a>
               <a href="<?php echo get_option('book_url'); ?>" class="cta-button">Book Now</a>
             </div>
  						<a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
