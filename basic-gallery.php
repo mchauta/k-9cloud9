@@ -66,8 +66,9 @@
  				<div class="entry-content">
           <?php if ($queryDogs->have_posts()):
                   while ($queryDogs->have_posts()): $queryDogs->the_post();?>
+                  <h2>Dog of the Week</h2>
                     <div class="dow-cont row">
-                      <h2>Dog of the Week</h2>
+
                       <div class="col-sm-12 col-md-4 dow-left">
                         <?php echo get_the_post_thumbnail(get_the_ID(), 'large'); ?>
                       </div>
