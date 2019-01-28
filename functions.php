@@ -38,7 +38,7 @@ function display_address_element()
 function display_directions_url_element()
 {
   ?>
-      <input type="text" name="directions_url" id="directions_url"><?php echo get_option('directions_url'); ?>/>
+      <input type="text" name="directions_url" value="<?php echo get_option('directions_url'); ?>" id="directions_url"/>
     <?php
 }
 
