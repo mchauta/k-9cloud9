@@ -176,6 +176,11 @@ h3 {
     font-size: 1.75rem;
 }
 
+@media screen and (min-width: 1025px) {
+  .header-sm {
+    font-size: 2rem;
+  }
+}
 .header-sm {
     width: 20%;
     text-align: center;
