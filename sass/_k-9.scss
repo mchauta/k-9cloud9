@@ -178,7 +178,10 @@ h3 {
 
 @media screen and (max-width: 1025px) {
   .header-sm {
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
+  }
+  #header-dir {
+    font-size: 2rem !important;
   }
 }
 .header-sm {
