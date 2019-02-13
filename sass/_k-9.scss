@@ -262,3 +262,30 @@ h3 {
     font-weight: bold;
     margin-right: 20px;
 }
+
+//navbar
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .navbar-nav>li>a {
+    font-size: 1rem;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .navbar-nav>li>a {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .navbar-nav>li>a {
+    font-size: 1.7rem;
+  }
+}
