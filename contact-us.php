@@ -35,6 +35,7 @@
 			<div class="row">
 
       <div class="col-sm-6">
+        <?php the_content(); ?>
  				<?php
  					$enable_vc = get_post_meta(get_the_ID(), '_wpb_vc_js_status', true);
  					if(!$enable_vc ) {
