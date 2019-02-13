@@ -1,5 +1,11 @@
 <?php
-//404 template
+/**
+ * The template for displaying 404 pages (not found)
+ *
+ * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ *
+ * @package WP_Bootstrap_Starter
+ */
 
 $has_banner = true;
 $thumb = false;
@@ -12,11 +18,7 @@ get_header(); ?>
  		<div id="page-sub-header" style="background-image:url(<?php if ($thumb) : echo $thumb; else :  img_path('pattern.svg') ; endif;?>)">
  				<div class="container">
           <div class="header-title">
- 						<h1>
- 								<?php
- 								the_title();
- 								?>
- 						</h1>
+ 						<h1>404 - ?</h1>
  						<p>
 							That page doesn't exist, try something else.
  						</p>
