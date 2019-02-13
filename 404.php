@@ -21,22 +21,17 @@ get_header(); ?>
 							That page doesn't exist, try something else.
  						</p>
           </div>
-            <div class="cta-container">
-            </div>
- 						<a href="#content" class="page-scroller"><i class="fa fa-fw fa-angle-down"></i></a>
+
  				</div>
  		</div>
  	<?php endif; ?>
-	<div id="content" class="site-content">
-		<div class="container">
-			<div class="row">
+
  	<section id="primary" class="content-area col-sm-12">
  		<main id="main" class="site-main" role="main">
 
  			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
  				<div class="entry-content">
- 					?
  				</div><!-- .entry-content -->
 
 
