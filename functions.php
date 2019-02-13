@@ -117,7 +117,7 @@ function create_reviews() {
         'edit_item' => __( 'Edit Review' ),
         'new_item' => __( 'New Review' )
       ),
-      'public' => true,
+      'public' => false,
       'has_archive' => true,
       'rewrite' => array('slug' => 'reviews'),
       'menu_icon'   => 'dashicons-star-empty',
@@ -135,7 +135,7 @@ function create_services() {
         'edit_item' => __( 'Edit Service' ),
         'new_item' => __( 'New Service' )
       ),
-      'public' => true,
+      'public' => false,
       'has_archive' => false,
       'taxonomies'  => array( 'category' ),
       'supports' => array('title', 'editor','thumbnail', 'revisions', 'page-attributes'),
@@ -154,7 +154,7 @@ function create_dogs() {
         'edit_item' => __( 'Edit Dog' ),
         'new_item' => __( 'New Dog' )
       ),
-      'public' => true,
+      'public' => false,
       'has_archive' => false,
       'taxonomies'  => array( 'category' ),
       'supports' => array('title', 'editor','thumbnail', 'revisions', 'page-attributes'),
