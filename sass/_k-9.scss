@@ -270,10 +270,7 @@ h3 {
   text-align: center;
 }
 
-.dropdown-menu {
-  font-size: 1.2rem;
-  text-align: center;
-}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
   .navbar-nav>li>a {
@@ -292,6 +289,10 @@ h3 {
 @media only screen and (max-width : 768px) {
   .navbar-nav>li>a {
     font-size: 1.7rem !important;
+  }
+  .dropdown-menu {
+    font-size: 1.7rem;
+    text-align: center;
   }
 }
 
