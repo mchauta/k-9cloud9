@@ -121,6 +121,8 @@ function create_reviews() {
       'has_archive' => true,
       'rewrite' => array('slug' => 'reviews'),
       'menu_icon'   => 'dashicons-star-empty',
+			'show_in_nav_menus' => true,
+    	'show_ui' => true,
     )
   );
 }
@@ -140,6 +142,8 @@ function create_services() {
       'taxonomies'  => array( 'category' ),
       'supports' => array('title', 'editor','thumbnail', 'revisions', 'page-attributes'),
       'menu_icon'   => 'dashicons-tickets-alt',
+			'show_in_nav_menus' => true,
+    	'show_ui' => true,
     )
   );
 }
