@@ -159,6 +159,8 @@ function create_dogs() {
       'taxonomies'  => array( 'category' ),
       'supports' => array('title', 'editor','thumbnail', 'revisions', 'page-attributes'),
       'menu_icon'   => 'dashicons-smiley',
+			'show_in_nav_menus' => true,
+    	'show_ui' => true,
     )
   );
 }
