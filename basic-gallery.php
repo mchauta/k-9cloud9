@@ -13,7 +13,7 @@
  $args = array (
    'post_type' => 'dogs',
    'posts_per_page' => 1,
-   'order' => 'ASC',
+   //'order' => 'ASC',
 
  );
  $queryDogs = new WP_Query($args);
