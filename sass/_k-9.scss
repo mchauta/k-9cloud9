@@ -3,6 +3,21 @@ h3 {
   font-size: 1.5rem;
 }
 
+.big-button {
+    padding: 20px;
+    font-size: 1.8rem;
+    background: $blue;
+    color: #fff;
+    border-radius: 20px;
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.big-button:hover {
+  background: $brightBlue;
+}
+
 .brand-pad {
   width: 110px;
 }
